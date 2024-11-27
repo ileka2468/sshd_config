@@ -66,7 +66,7 @@ X11Forwarding no
 ########## Authentication ##########
 
 # permit only the specified users to login
-#AllowUsers k4yt3x
+AllowUsers eclair
 
 # permit only users within the specified groups to login
 #AllowGroups k4yt3x
@@ -76,13 +76,13 @@ X11Forwarding no
 #   - AuthenticationMethods: permitted authentication methods
 #   - PasswordAuthentication: set to no to disable password authentication
 #   - UsePAM: set to no to disable all PAM authentication, also disables PasswordAuthentication when set to no
-#AuthenticationMethods publickey
-#PasswordAuthentication no
-#UsePAM no
+AuthenticationMethods publickey
+PasswordAuthentication no
+UsePAM no
 
 # PAM authentication enabled to make password authentication available
 # remove this if password authentication is not needed
-UsePAM yes
+#UsePAM yes
 
 # challenge-response authentication backend it not configured by default
 # therefore, it is set to "no" by default to avoid the use of an unconfigured backend
